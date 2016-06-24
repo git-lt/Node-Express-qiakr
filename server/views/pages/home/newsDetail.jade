@@ -1,0 +1,33 @@
+extends ../../layout/home
+include ../../includes/home/mixins
+
+block content
+        .news-wrap
+            .container
+                #newsTabWrap.row
+                    .col-md-2
+                        .news-sidebar-nav
+                            ul.list-unstyled.menu-box.tab-menus
+                                li.menu-item(data-card='info' class= {active: tag==0})
+                                    a(href='/news/0') 资讯
+                                li.menu-item(data-card='case' class= {active: tag==1})
+                                    a(href='/news/1') 案例
+                                li.menu-item(data-card='activity' class= {active: tag==2})
+                                    a(href='/news/2') 活动
+                    .col-md-10.tab-content
+                        #newsDetailWrap
+                            .news-detail-box.mb100(data-id='12')
+                                if data.title
+                                    h2.art-tit.text-center= data.title
+                                        .art-info.text-right
+                                            time 发布时间：#{moment(data.gmtCreate).format('YYYY-MM-DD')}
+                                    div
+                                        p.art-con!= data.text
+                                else
+                                    p 暂无内容
+    
+block script
+    script(src="http://static.qiakr.com/source/video/video.min.js")
+    script(src="http://v3.jiathis.com/code/jiathis_r.js?move=0")
+    script.
+        Utils.fixedHeader();

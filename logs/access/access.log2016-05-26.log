@@ -1,0 +1,28 @@
+[2016-05-26 19:25:32.219] [INFO] access - GET /
+[2016-05-26 19:26:19.778] [INFO] access - GET /
+[2016-05-26 19:40:10.147] [INFO] access - GET /
+[2016-05-26 19:40:10.629] [INFO] access - GET /home/pages/main.css
+[2016-05-26 19:40:12.505] [INFO] access - GET /home/pages/main.css
+[2016-05-26 19:41:03.889] [INFO] access - GET /
+[2016-05-26 19:41:04.160] [INFO] access - GET /home/pages/main.css
+[2016-05-26 19:41:05.391] [INFO] access - GET /home/pages/main.css
+[2016-05-26 19:41:45.848] [INFO] access - GET /
+[2016-05-26 19:41:46.269] [INFO] access - GET /home/pages/main.css
+[2016-05-26 19:41:47.623] [INFO] access - GET /home/pages/main.css
+[2016-05-26 19:43:33.070] [INFO] access - GET /sales/pages/t.html
+[2016-05-26 19:58:58.487] [WARN] access - 304 GET / 728
+[2016-05-26 19:58:59.013] [WARN] access - 304 GET /home/pages/main.css 5
+[2016-05-26 19:59:02.297] [WARN] access - 304 GET /home/pages/main.css 1
+[2016-05-26 20:08:15.672] [WARN] access - ::ffff:127.0.0.1 - - "GET / HTTP/1.1" 304 - "http://127.0.0.1:3001/join" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36 QQBrowser/3.9.3943.400"
+[2016-05-26 20:08:15.976] [WARN] access - ::ffff:127.0.0.1 - - "GET /home/pages/main.css HTTP/1.1" 304 - "http://127.0.0.1:3001/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36 QQBrowser/3.9.3943.400"
+[2016-05-26 20:08:17.058] [WARN] access - ::ffff:127.0.0.1 - - "GET /home/pages/main.css HTTP/1.1" 304 - "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36 QQBrowser/3.9.3943.400"
+[2016-05-26 20:09:32.519] [WARN] access - 304 GET / 693ms
+[2016-05-26 20:09:32.927] [WARN] access - 304 GET /home/pages/main.css 6ms
+[2016-05-26 20:09:34.181] [WARN] access - 304 GET /home/pages/main.css 2ms
+[2016-05-26 20:09:54.939] [WARN] access - 304 GET / 192ms
+[2016-05-26 20:09:55.243] [WARN] access - 304 GET /home/pages/main.css 2ms
+[2016-05-26 20:09:56.124] [WARN] access - 304 GET /home/pages/main.css 1ms
+[2016-05-26 20:10:07.900] [WARN] access - 304 GET /home/pages/main.css 1ms
+[2016-05-26 20:10:09.196] [WARN] access - 304 GET / 153ms
+[2016-05-26 20:10:09.464] [WARN] access - 304 GET /home/pages/main.css 2ms
+[2016-05-26 20:10:10.227] [WARN] access - 304 GET /home/pages/main.css 2ms

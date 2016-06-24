@@ -1,0 +1,106 @@
+<!-- breadcrumb -->
+<div class="row">
+  <div class="col-sm-12">
+      <h4 class="page-title">官网管理</h4>
+      <ol class="breadcrumb">
+        <li>新闻管理</li>
+        <li class="active">列表</li>
+      </ol>
+  </div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+	  <div class="alert alert-warning">
+	    <strong>帮助说明：</strong> 
+	    <p>
+      	1. 编辑保存之后需要点击“发布”才会在首页展示，点击“隐藏”在首页不展示<br>
+		2. 删除后不可恢复，请谨慎操作
+	    </p>
+	  </div>
+	</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12" id="mainCotainer">
+    <div class="card-box" id="videoWrap">
+      <div id="videoListWrap">
+        <div class="row m-t-10 m-b-10">
+          <div class="col-sm-6">
+            <div class="portfolioFilter m-t-5" id="newsTypeBox">
+              <a href="javascript:;" data-tag="" class="current">全部</a>
+              <a href="javascript:;" data-tag="0" class="">资讯</a>
+              <a href="javascript:;" data-tag="1" class="">案例</a>
+              <a href="javascript:;" data-tag="2" class="">活动</a>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <form role="form">
+              <div class="form-group contact-search">
+                  <input type="text" id="search" ms-keydown="searchEnterEv($event)" class="form-control input-sm" placeholder="请输入教程标题关键字...">
+                  <button type="button" class="btn btn-white btn-sm"><i class="iconfont">&#xe62d;</i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="text-right">
+         <a href="#!/news_edit" class="btn btn-default btn-sm"><i class="iconfont">&#xe63d;</i> 添加教程</a>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-actions-bar" id="newsTbl">
+            <thead>
+              <tr>
+                <th style="min-width:200px;">主图</th>
+                <th style="width:20%;">标题与摘要</th>
+                <th style="width:10%;">浏览量</th>
+                <th style="width:15%;">类型</th>
+                <th style="min-width:200px;" class="text-right">操作</th>
+              </tr>
+            </thead>
+
+            <tbody id="newsListTbd">
+              <td colspan="30" class="text-center">未查询到相关数据</td>
+            </tbody>
+
+            <tfoot>
+              <tr><td colspan="30" class="tl c-8">共 <span id="newsTblTotal">0</span> 条记录</td></tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="tr" class="page-nav">
+          <nav>
+            <ul class="pagination" id="newsPagesBox">
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script id="newsTblListTpl" type="text/html">
+{{each data as item i}}
+<tr data-id="{{item.id}}">
+	<td>
+		<img src="{{item.thumb | img7N: 180,100}}" alt="">
+		<div>{{item.gmtUpdate | dateFormat}}</div>
+	</td>
+	<td><h4>{{item.title | truncate: 18}}</h4><p>{{item.summary | truncate: 30}}</p></td>
+	<td>{{item.pv}}</td>
+	<td>{{item.tag | getNewsTag}}</td>
+	<td>
+		<a class="preview" href="javascript:;" data-id="{{item.id}}">预览</a>
+		{{if item.status==0}}
+		<a class="publish" href="javascript:;" data-status="{{item.status}}" data-id="{{item.id}}">取消发布</a>
+		{{else}}
+		<a class="publish" href="javascript:;" data-status="{{item.status}}" data-id="{{item.id}}">发布上线</a>
+		{{/if}}
+		<a class="delete" href="javascript:;" data-id="{{item.id}}">删除</a>
+	</td>
+</tr>
+{{/each}}
+</script>
+
+

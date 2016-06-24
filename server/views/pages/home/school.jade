@@ -1,0 +1,56 @@
+extends ../../layout/school
+
+block style
+  style.
+    .desc {-webkit-line-clamp: 2;}
+
+block content
+    .school-index-wrap
+        .container
+            .row
+                .col-sm-12
+                    div(style='width:100%; background:#f5f5f5; margin-bottom:30px;')
+                        img(src='http://static.qiakr.com/website/qkdx_img_03.jpg', alt='', style='max-width:100%;')
+            .row
+                #newTabPanelWrap.col-md-12.tab-content
+                    section#zxPanel.news-floor.fade.in.active
+                        .video-list-wrap
+                            .row
+                                #videoListBox.col-md-9
+                                    if listData.length
+                                        each lData in listData
+                                            if lData.list.length
+                                                    .video-floor.mb30.ovh
+                                                        h3.bdr-b.pb10.video-floor-tit #{lData.title}
+                                                            if lData.count > 6
+                                                                a.pull-right.more.b(href='/school/videos/') 更多课程
+                                                        ul.list-box.sc-home.clearfix
+                                                            each item in lData.list
+                                                                li.video-list-item
+                                                                    a.item-wrap(href='/school/videos/'+item.type+'/'+item.id)
+                                                                        .sg-item-img
+                                                                            img(src=item.videoPic, alt='')
+                                                                    h3= item.mainTitle
+                                                                    .desc= item.viceTitle
+                                                                    p.info
+                                                                        time(title='日期') 发布日期：#{moment(item.gmtCreate).format('YYYY-MM-DD')}
+
+                                    else
+                                        p 暂无数据
+                                .col-md-3
+                                    div
+                                        .text-right.mb10
+                                            a(href='http://form.mikecrm.com/f.php?t=pzMDkD', target='_blank')
+                                                img(src='http://static.qiakr.com/website/qkdx_img_07.jpg', style='max-width: 100%;')
+                                        .text-right.mb20
+                                            a(href='http://www.qiakr.com/bar/forum.php?mod=viewthread&tid=28&page=1&extra=#pid40', target='_blank')
+                                                img(src='http://static.qiakr.com/website/qkdx_img_09.jpg', style='max-width: 100%;')
+                                    #topVideoWrap.mb30
+                                        h4.list-header-rt 最新教程
+                                        .list-rt
+                                            if topData[0].count
+                                                ul#topVideoList
+                                                    each tItem in topData[0].list
+                                                        li
+                                                            a(href="/school/videos/"+tItem.type+"/"+tItem.id target="_blank") #{tItem.mainTitle}
+                                                        

@@ -1,0 +1,110 @@
+<style>
+  .note-editor {border-color:#e3e3e3;}
+    .bootstrap-tagsinput { display: block;}
+    .bootstrap-tagsinput input {min-width: 120px;}
+    .video-pic-box {width:320px; height:180px; background:#eee;border-radius:3px;}
+    .webuploader-element-invisible {opacity: 0;}/* 隐藏file控件 */
+    .ui-webuploader-imgwrap {position: relative; z-index: 10; overflow: hidden; -webkit-box-sizing: border-box; box-sizing: border-box;}
+    .ui-webuploader-imgwrap .progress-bar{ position: absolute; left:0;top:auto; height: 12px; bottom:0; overflow: hidden;}
+    .n-invalid {border: 1px solid #f00;}
+    .n-error .n-icon {display: none;}
+    .video-pic {background-size:cover; background-position: center; background-repeat: no-repeat; width:320px; height: 180px; border:1px solid #eee; border-radius: 3px;}
+    .webuploader-pick {height: 35px; line-height: 35px; color:#fff; border:none;}
+    .webuploader-container {height: 35px;}
+    .bootstrap-tagsinput {border-radius: 3px; line-height: 26px;}
+    .select2-default {line-height: 26px;}
+    .bootstrap-tagsinput input {border: none; box-shadow: none; outline: none; background-color: transparent; padding: 0 6px; margin: 0; width: auto; max-width: 120px; }
+</style>
+<div class="row">
+  <div class="col-sm-12">
+      <h4 class="page-title">官网设置</h4>
+      <ol class="breadcrumb">
+        <li><a href="#!/news">新闻列表</a></li>
+        <li class="active">添加新闻</li>
+      </ol>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12" id="mainCotainer" ms-controller="newsCtrl">
+    <div class="card-box" id="videoWrap">
+      <div id="videoEditWrap">
+        <form id="newsFrm" autocomplete="off" data-validator-option="{theme:'yellow_bottom_effect',stopOnError:true}">
+          <div class="row">
+              <div class="col-sm-6">
+                  <div class="form-group clearfix" id="newsPicUploaderWrap">
+                      <label class="control-label">新闻主图</label>
+                      <div class="video-pic-box ui-webuploader-imgwrap mt10">
+                        <img ms-attr-src="{{createData.thumb}}" class="ui_image_preview" style="max-width:100%;">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            <span>0%</span>
+                        </div>
+                      </div>
+                      <input type="hidden" name="videoPic" ms-duplex="createData.thumb" id="vidoePic">
+                      <div class="mt10"><button class="btn btn-primary" type="button" style="width:120px; line-height: 35px; padding: 0;" id="filePicker" href="#!">上传图片</button><span style="line-height: 35px;">（建议上传图片大小：640x364）</span></div>
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                  <div class="form-group">
+                      <label class="control-label">标题 <span class="text-danger">*</span></label>
+                      <input type="text" name="title" ms-duplex="createData.title" maxlength="60" data-rule="标题: required;" class="form-control limit-num input-sm" placeholder="请输入视频标题">
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label">选择类别 <span class="text-danger">*</span></label>
+                      <select class="select2 form-control input-sm" name="tag" ms-duplex="createData.tag" data-rule="文章类型: required;" data-placeholder="请选择文章类型">
+                        <option value="0">活动</option>
+                        <option value="1">资讯</option>
+                        <option value="2">案例</option>
+                      </select>
+                  </div>
+                 <!--  <div class="form-group">
+                      <label class="control-label">排序值 <span class="text-danger">*</span></label>
+                      <input type="number" class="form-control input-sm" value="1" ms-duplex="createData.sort" name="sort" data-rule="required;range[0~];">
+                  </div> -->
+                  <div class="form-group">
+                    <div class="radio radio-custom dib">
+                        <input type="radio" name="status" id="status2" value="2" ms-duplex-string="createData.status">
+                        <label for="status2">
+                            发布
+                        </label>
+                    </div>
+                    <div class="radio radio-custom dib ml20">
+                        <input type="radio" name="status" id="status1" value="1" ms-duplex-string="createData.status">
+                        <label for="status1">
+                            不发布
+                        </label>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-12">
+                  <div class="form-group">
+                      <label class="control-label">新闻简介</label>
+                      <textarea name="summary" class="form-control limit-num" ms-duplex="createData.summary" maxlength="225" rows="2" placeholder="请输入视频简介内容..."></textarea>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="form-group">
+                      <label class="control-label">新闻详情</label>
+                      <textarea name="text" placeholder="请输入新闻详情，内容少天5000个字符..." id="newsContentArea"></textarea>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="row">
+              <div class="form-group">
+                  <div class="col-sm-12 m-t-15 text-center">
+                      <button type="button" class="btn btn-primary w-md" id="btnCreateNews">
+                          保存
+                      </button>
+                  </div>
+              </div>
+          </div>
+        </form>
+      </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,33 @@
+[2016-06-02 17:33:28.254] [WARN] consoleWarn - 这是一条warn信息
+[2016-06-02 17:33:43.876] [WARN] consoleWarn - 这是一条warn信息
+[2016-06-02 17:33:54.056] [WARN] consoleWarn - 这是一条warn信息
+[2016-06-02 17:34:27.253] [WARN] consoleWarn - 这是一条warn信息
+[2016-06-02 17:35:04.212] [INFO] console - 
+[2016-06-02 17:35:04.215] [INFO] console - [0m[0m
+[2016-06-02 17:35:04.219] [INFO] console - server running at port:3001
+[2016-06-02 17:35:04.242] [INFO] console - [0m  == NewsAPI 接口测试 ==[0m
+[2016-06-02 17:35:04.254] [INFO] console - [32mYeah zookeeper connected![0m
+[2016-06-02 17:35:04.320] [INFO] console -   [32m  ✓[0m[90m POST - 新闻 - 列表[0m[33m (74ms)[0m
+[2016-06-02 17:35:04.349] [INFO] console -   [32m  ✓[0m[90m POST - 新闻 - 详情[0m
+[2016-06-02 17:35:04.351] [INFO] console - 
+[2016-06-02 17:35:04.352] [INFO] console - [0m  VideosAPI 接口测试[0m
+[2016-06-02 17:35:04.381] [INFO] console -   [32m  ✓[0m[90m POST - 视频 - 列表[0m
+[2016-06-02 17:35:04.402] [INFO] console -   [32m  ✓[0m[90m POST - 视频 - 详情[0m
+[2016-06-02 17:35:04.405] [INFO] console - 
+[2016-06-02 17:35:04.409] [INFO] console - 
+[2016-06-02 17:36:15.097] [WARN] consoleWarn - 这是一条warn信息
+[2016-06-02 17:36:16.531] [WARN] consoleWarn - 这是一条warn信息
+[2016-06-02 17:37:28.809] [INFO] console - 
+[2016-06-02 17:37:28.813] [INFO] console - [0m[0m
+[2016-06-02 17:37:28.820] [INFO] console - server running at port:3001
+[2016-06-02 17:37:28.868] [INFO] console - [0m  == NewsAPI 接口测试 ==[0m
+[2016-06-02 17:37:28.877] [INFO] console - [32mYeah zookeeper connected![0m
+[2016-06-02 17:37:28.966] [INFO] console -   [32m  ✓[0m[90m POST - 新闻 - 列表[0m[31m (85ms)[0m
+[2016-06-02 17:37:29.066] [INFO] console -   [32m  ✓[0m[90m POST - 新闻 - 详情[0m[31m (85ms)[0m
+[2016-06-02 17:37:29.109] [INFO] console - 
+[2016-06-02 17:37:29.112] [INFO] console - [0m  VideosAPI 接口测试[0m
+[2016-06-02 17:37:29.140] [INFO] console -   [32m  ✓[0m[90m POST - 视频 - 列表[0m
+[2016-06-02 17:37:29.182] [INFO] console -   [32m  ✓[0m[90m POST - 视频 - 详情[0m
+[2016-06-02 17:37:29.185] [INFO] console - 
+[2016-06-02 17:37:29.191] [INFO] console - 
+[2016-06-02 17:38:51.970] [WARN] consoleWarn - 这是一条warn信息

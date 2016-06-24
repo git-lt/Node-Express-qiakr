@@ -1,0 +1,170 @@
+[2016-06-02 17:18:40.480] [INFO] consoleInfo - [ { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 0 },
+  { '$class': 'java.lang.Byte', '$': 0 } ]
+[2016-06-02 17:18:40.529] [INFO] consoleInfo - [ { '$class': 'java.lang.Long', '$': 47 } ]
+[2016-06-02 17:18:40.548] [INFO] consoleInfo - [ { '$class': 'java.lang.Byte', '$': 2 },
+  { '$class': 'java.lang.String', '$': null },
+  { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 2 } ]
+[2016-06-02 17:18:40.574] [INFO] consoleInfo - [ { '$class': 'java.lang.Long', '$': '1' } ]
+[2016-06-02 17:19:05.822] [INFO] consoleInfo - [ { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 0 },
+  { '$class': 'java.lang.Byte', '$': 0 } ]
+[2016-06-02 17:19:05.906] [INFO] consoleInfo - [ { '$class': 'java.lang.Long', '$': 47 } ]
+[2016-06-02 17:19:05.926] [INFO] consoleInfo - [ { '$class': 'java.lang.Byte', '$': 2 },
+  { '$class': 'java.lang.String', '$': null },
+  { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 2 } ]
+[2016-06-02 17:19:05.979] [INFO] consoleInfo - [ { '$class': 'java.lang.Long', '$': '1' } ]
+[2016-06-02 17:33:28.250] [INFO] consoleInfo - 这是一条info信息
+[2016-06-02 17:33:43.871] [INFO] consoleInfo - 这是一条info信息
+[2016-06-02 17:33:54.059] [INFO] consoleInfo - 这是一条info信息
+[2016-06-02 17:34:27.251] [INFO] consoleInfo - 这是一条info信息
+[2016-06-02 17:35:04.212] [INFO] console - 
+[2016-06-02 17:35:04.215] [INFO] console - [0m[0m
+[2016-06-02 17:35:04.219] [INFO] console - server running at port:3001
+[2016-06-02 17:35:04.242] [INFO] console - [0m  == NewsAPI 接口测试 ==[0m
+[2016-06-02 17:35:04.254] [INFO] console - [32mYeah zookeeper connected![0m
+[2016-06-02 17:35:04.320] [INFO] console -   [32m  ✓[0m[90m POST - 新闻 - 列表[0m[33m (74ms)[0m
+[2016-06-02 17:35:04.349] [INFO] console -   [32m  ✓[0m[90m POST - 新闻 - 详情[0m
+[2016-06-02 17:35:04.351] [INFO] console - 
+[2016-06-02 17:35:04.352] [INFO] console - [0m  VideosAPI 接口测试[0m
+[2016-06-02 17:35:04.381] [INFO] console -   [32m  ✓[0m[90m POST - 视频 - 列表[0m
+[2016-06-02 17:35:04.402] [INFO] console -   [32m  ✓[0m[90m POST - 视频 - 详情[0m
+[2016-06-02 17:35:04.405] [INFO] console - 
+[2016-06-02 17:35:04.409] [INFO] console - 
+[2016-06-02 17:36:15.093] [INFO] consoleInfo - 这是一条info信息
+[2016-06-02 17:36:16.528] [INFO] consoleInfo - 这是一条info信息
+[2016-06-02 17:36:20.157] [INFO] consoleInfo - [ { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 0 },
+  { '$class': 'java.lang.Byte', '$': 0 } ]
+[2016-06-02 17:36:20.240] [INFO] consoleInfo - [ { '$class': 'java.lang.Long', '$': 47 } ]
+[2016-06-02 17:36:20.258] [INFO] consoleInfo - [ { '$class': 'java.lang.Byte', '$': 2 },
+  { '$class': 'java.lang.String', '$': null },
+  { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 2 } ]
+[2016-06-02 17:36:20.287] [INFO] consoleInfo - [ { '$class': 'java.lang.Long', '$': '1' } ]
+[2016-06-02 17:37:28.809] [INFO] console - 
+[2016-06-02 17:37:28.813] [INFO] console - [0m[0m
+[2016-06-02 17:37:28.820] [INFO] console - server running at port:3001
+[2016-06-02 17:37:28.868] [INFO] console - [0m  == NewsAPI 接口测试 ==[0m
+[2016-06-02 17:37:28.877] [INFO] console - [32mYeah zookeeper connected![0m
+[2016-06-02 17:37:28.966] [INFO] console -   [32m  ✓[0m[90m POST - 新闻 - 列表[0m[31m (85ms)[0m
+[2016-06-02 17:37:29.066] [INFO] console -   [32m  ✓[0m[90m POST - 新闻 - 详情[0m[31m (85ms)[0m
+[2016-06-02 17:37:29.109] [INFO] console - 
+[2016-06-02 17:37:29.112] [INFO] console - [0m  VideosAPI 接口测试[0m
+[2016-06-02 17:37:29.140] [INFO] console -   [32m  ✓[0m[90m POST - 视频 - 列表[0m
+[2016-06-02 17:37:29.182] [INFO] console -   [32m  ✓[0m[90m POST - 视频 - 详情[0m
+[2016-06-02 17:37:29.185] [INFO] console - 
+[2016-06-02 17:37:29.191] [INFO] console - 
+[2016-06-02 17:38:51.968] [INFO] consoleInfo - 这是一条info信息
+[2016-06-02 17:45:23.962] [INFO] cInfo - [ { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 0 },
+  { '$class': 'java.lang.Byte', '$': 0 } ]
+[2016-06-02 17:45:24.053] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': 47 } ]
+[2016-06-02 17:45:24.072] [INFO] cInfo - [ { '$class': 'java.lang.Byte', '$': 2 },
+  { '$class': 'java.lang.String', '$': null },
+  { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 2 } ]
+[2016-06-02 17:45:24.095] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': '1' } ]
+[2016-06-02 17:47:50.018] [INFO] cInfo - [ { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 0 },
+  { '$class': 'java.lang.Byte', '$': 0 } ]
+[2016-06-02 17:47:50.087] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': 47 } ]
+[2016-06-02 17:48:33.522] [INFO] cInfo - [ { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 0 },
+  { '$class': 'java.lang.Byte', '$': 0 } ]
+[2016-06-02 17:48:33.609] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': 47 } ]
+[2016-06-02 17:48:33.634] [INFO] cInfo - [ { '$class': 'java.lang.Byte', '$': 2 },
+  { '$class': 'java.lang.String', '$': null },
+  { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 2 } ]
+[2016-06-02 17:48:33.666] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': '1' } ]
+[2016-06-02 17:52:26.283] [INFO] cInfo - [ { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 0 },
+  { '$class': 'java.lang.Byte', '$': 0 } ]
+[2016-06-02 17:52:26.354] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': 47 } ]
+[2016-06-02 17:52:26.374] [INFO] cInfo - [ { '$class': 'java.lang.Byte', '$': 2 },
+  { '$class': 'java.lang.String', '$': null },
+  { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 2 } ]
+[2016-06-02 17:52:26.398] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': '1' } ]
+[2016-06-02 18:01:54.091] [INFO] cInfo - [ { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 0 },
+  { '$class': 'java.lang.Byte', '$': 0 } ]
+[2016-06-02 18:01:54.170] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': 47 } ]
+[2016-06-02 18:01:54.190] [INFO] cInfo - [ { '$class': 'java.lang.Byte', '$': 2 },
+  { '$class': 'java.lang.String', '$': null },
+  { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 2 } ]
+[2016-06-02 18:01:54.211] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': '1' } ]
+[2016-06-02 18:03:27.578] [INFO] cInfo - [ { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 0 },
+  { '$class': 'java.lang.Byte', '$': 0 } ]
+[2016-06-02 18:03:27.664] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': 47 } ]
+[2016-06-02 18:03:27.703] [INFO] cInfo - [ { '$class': 'java.lang.Byte', '$': 2 },
+  { '$class': 'java.lang.String', '$': null },
+  { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 2 } ]
+[2016-06-02 18:03:27.730] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': '1' } ]
+[2016-06-02 18:04:56.393] [INFO] cInfo - [ { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 0 },
+  { '$class': 'java.lang.Byte', '$': 0 } ]
+[2016-06-02 18:04:56.458] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': 47 } ]
+[2016-06-02 18:04:56.482] [INFO] cInfo - [ { '$class': 'java.lang.Byte', '$': 2 },
+  { '$class': 'java.lang.String', '$': null },
+  { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 2 } ]
+[2016-06-02 18:04:56.511] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': '1' } ]
+[2016-06-02 18:05:15.263] [INFO] cInfo - [ { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 0 },
+  { '$class': 'java.lang.Byte', '$': 0 } ]
+[2016-06-02 18:05:15.351] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': 47 } ]
+[2016-06-02 18:05:15.375] [INFO] cInfo - [ { '$class': 'java.lang.Byte', '$': 2 },
+  { '$class': 'java.lang.String', '$': null },
+  { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 2 } ]
+[2016-06-02 18:05:15.415] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': '1' } ]
+[2016-06-02 18:07:09.715] [INFO] cInfo - [ { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 0 },
+  { '$class': 'java.lang.Byte', '$': 0 } ]
+[2016-06-02 18:07:09.781] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': 47 } ]
+[2016-06-02 18:07:09.799] [INFO] cInfo - [ { '$class': 'java.lang.Byte', '$': 2 },
+  { '$class': 'java.lang.String', '$': null },
+  { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 2 } ]
+[2016-06-02 18:07:09.821] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': '1' } ]
+[2016-06-02 18:07:39.272] [INFO] cInfo - [ { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 0 },
+  { '$class': 'java.lang.Byte', '$': 0 } ]
+[2016-06-02 18:07:39.341] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': 47 } ]
+[2016-06-02 18:07:39.357] [INFO] cInfo - [ { '$class': 'java.lang.Byte', '$': 2 },
+  { '$class': 'java.lang.String', '$': null },
+  { '$class': 'java.lang.Integer', '$': 0 },
+  { '$class': 'java.lang.Integer', '$': 6 },
+  { '$class': 'java.lang.Byte', '$': 2 } ]
+[2016-06-02 18:07:39.381] [INFO] cInfo - [ { '$class': 'java.lang.Long', '$': '1' } ]

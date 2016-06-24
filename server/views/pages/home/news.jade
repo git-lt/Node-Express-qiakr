@@ -1,0 +1,111 @@
+extends ../../layout/home
+include ../../includes/home/mixins
+
+block style
+	style.
+		.news-floor {display: none;}
+
+block content
+	.news-wrap
+		.container
+			#newsTabWrap.row
+				.col-md-2
+					.news-sidebar-nav
+						ul.list-unstyled.menu-box.tab-menus
+							li.menu-item(class= {active: tag==0})
+								a(href='/news/0') 资讯
+							li.menu-item(data-card='case' class= {active: tag==1})
+								a(href='/news/1') 案例
+							li.menu-item(data-card='activity' class= {active: tag==2})
+								a(href='/news/2') 活动
+				#newTabPanelWrap.col-md-10.tab-content
+					if tag == 0
+						section#zxPanel.news-floor.fade.in.active
+							.news-zx
+								.row
+									.col-md-9
+										if data.length
+											ul#ZXListBox.list-box
+												each item in data
+													li.news-list-item(data-id=item.id)
+														a.item-wrap(href='/news/'+tag+'/'+item.id, title=item.title)
+															.zs-item-img
+																if item.thumb
+																	img(src=item.thumb+'?imageView2/1/w/260/h/160/q/70', alt='')
+																else
+																	img(src="http://static.qiakr.com/admin/qk_img_260x160.png")
+															h3= item.title
+																.desc= item.summary
+															p.info
+																time(title='日期') #{moment(item.gmtCreate).format('YYYY-MM-DD')}
+
+											.nav-wrap
+												nav
+													ul#navPagesZXBox.pagination
+														+pagination({totalData:count, showData:6})
+										else
+											p 暂无数据
+									.col-md-3
+										div
+											a(href='http://www.qiakr.com/admin/open_datum.htm', target='_blank')
+												img(src='http://static.qiakr.com/admin/865028201043799887.png', style='max-width: 100%;')
+										br
+										div
+											img(src='http://static.qiakr.com/admin/20160311.png', style='max-width: 100%;')
+					else if tag == 1
+						section#alPanel.news-floor.fade.in.active
+							.news-al
+								if data.length
+									ul#ALListBox.list-box
+										each item in data
+											li.news-list-item(data-id=item.id)
+												a.item-wrap(href='/news/'+tag+'/'+item.id, title=item.title)
+													.zs-item-img
+														if item.thumb
+															img(src=item.thumb+'?imageView2/1/w/260/h/160/q/70', alt='')
+														else
+															img(src="http://static.qiakr.com/admin/qk_img_260x160.png")
+													h3= item.title
+														.desc= item.summary
+													p.info
+														time(title='日期') #{moment(item.gmtCreate).format('YYYY-MM-DD')}
+									.nav-wrap
+										nav
+											ul#navPagesZXBox.pagination
+												+pagination({totalData:count, showData:6})
+								else
+									p 暂无数据
+					else if tag == 2
+						section#hdPanel.news-floor.fade.in.active
+							.news-hd
+								.text-center(style='margin-bottom: 30px;')
+									img(src='http://static.qiakr.com/admin/banner964x360.jpg?v=1', style='max-width: 100%')
+						div
+							if data.lenght
+								ul#HDListBox.list-box
+								.nav-wrap
+									nav
+										ul#navPagesHDBox.pagination
+											each item in data
+												li.news-list-item.hd-item(data-id=item.id)
+													a.item-wrap(href='/news/'+tag+'/'+item.id, title=item.title)= item.title
+														.zs-item-img.hd-img
+															if item.thumb
+																img(src=item.thumb+'?imageView2/1/w/260/h/160/q/70', alt='')
+															else
+																img(src="http://static.qiakr.com/admin/qk_img_260x160.png")
+														h3= item.title
+															.desc= item.summary
+														p.info
+															time(title='日期') #{moment(item.gmtCreate).format('YYYY-MM-DD')}
+										.nav-wrap
+											nav
+												ul#navPagesZXBox.pagination
+													+pagination({totalData:count, showData:6})
+							else
+								p 暂无数据
+					else
+						p | 暂无数据
+block script
+	script.
+		Utils.fixedHeader();

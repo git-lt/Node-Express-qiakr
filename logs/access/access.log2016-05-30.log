@@ -1,0 +1,5 @@
+[2016-05-30 20:58:26.821] [INFO] access - 200 GET / 591ms
+[2016-05-30 20:58:26.987] [WARN] access - 304 GET /home/css/main.css 16ms
+[2016-05-30 20:58:26.997] [INFO] access - 200 GET /home/js/base.js 20ms
+[2016-05-30 20:58:27.933] [WARN] access - 304 GET /home/css/main.css 4ms
+[2016-05-30 20:58:28.029] [WARN] access - 304 GET /home/js/base.js 3ms

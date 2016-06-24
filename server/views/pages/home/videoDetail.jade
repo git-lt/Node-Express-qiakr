@@ -1,0 +1,85 @@
+extends ../../layout/school
+include ../../includes/home/mixins
+
+block style
+    link(href="//static.qiakr.com/source/video/video-js.min.css" rel="stylesheet")
+    script(src="/home/js/helpers.js")
+    style.
+        .art-img { width:80%; height:160px; margin-top:12px; display:inline-block; }
+        .video-js .vjs-big-play-button { height: 3em; line-height: 3em; top:50%; left: 50%; margin-left: -1.5em; margin-top: -1.5em;}
+        .video-floor-tit { font-size: 18px; font-weight: 200;}
+        .video-tag-item { display: inline-block; padding: 0 5px; background-color: #eee; margin-right: 10px; border-radius: 2px; font-size: 12px; color: #7B7B7B; line-height: 2em; }
+
+block content
+    #videoDetailsWrap.container
+        if data.mainTitle
+            .bdr.mb30.pt30.pb30
+                .row
+                    .col-sm-6.col-md-9
+                        .row
+                            .col-md-5.text-center
+                                div.art-img
+                                    img.img-responsive(src=data.videoPic+'', alt='')
+                            .col-md-7
+                                h4#videoMainTit.mb10= data.mainTitle
+                                p.text-muted.mb20   讲师：#{data.teacher || '暂无'}
+                                    br
+                                    | 时长：#{data.duringTime || '0'} 分钟
+                                    br
+                                    | 适合商家层级：
+                                    +createLevels(data.supplierLevel)
+                                p.pr30
+                                    | 视频简介：
+                                span.text-muted #{data.viceTitle || '暂无'}
+                                p.tag
+                                    | 标签：
+                                    +createTags(data.courseTag)
+
+                    .col-sm-6.col-md-3.text-center
+                        div
+                            a#addFavor.text-danger(href='javascript:;')
+                                i.iconfont(style='font-size:20px;') 
+                                |  收藏
+                .row.mb30
+                    .col-sm-9
+                        .p20.bdr
+                            div
+                                video.video-js(id='videobox', controls='', preload='auto', width='800', height='500', poster='', data-setup='{}')
+                                    source(src=''+data.videoUrl, type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+                                    p.vjs-no-js 查看这个视频请启用JavaScript,并考虑升级到最新浏览器！
+                            .mt30 !{data.courseDescription || '暂无详情'}
+                    .col-sm-3
+                        div
+                            .text-right.mb10
+                                a(href='http://form.mikecrm.com/f.php?t=pzMDkD', target='_blank')
+                                    img(src='http://static.qiakr.com/website/qkdx_img_07.jpg', style='max-width: 100%;')
+                            .text-right.mb20
+                                a(href='http://www.qiakr.com/bar/forum.php?mod=viewthread&tid=28&page=1&extra=#pid40', target='_blank')
+                                    img(src='http://static.qiakr.com/website/qkdx_img_09.jpg', style='max-width: 100%;')
+        else
+            p.text-center.p20 暂无数据
+
+block script
+    script(src="http://static.qiakr.com/source/video/video.min.js")
+    script.
+        videojs('videobox');
+        $('#addFavor').on('click', function(){
+            var url = window.location;  
+            var title = $('#videoMainTit').text();  
+            var ua = navigator.userAgent.toLowerCase();  
+            if (ua.indexOf("360se") > -1) {  
+              alert("由于360浏览器功能限制，请按 Ctrl+D 手动收藏！"); 
+            }else if (ua.indexOf("msie 8") > -1) {  
+              window.external.AddToFavoritesBar(url, title); //IE8  
+            }else if (document.all) {  
+              try{  
+               window.external.addFavorite(url, title);  
+              }catch(e){  
+               alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');  
+              }  
+            }else if (window.sidebar) {  
+              window.sidebar.addPanel(title, url, "");  
+            }else {  
+              alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');  
+            } 
+        })

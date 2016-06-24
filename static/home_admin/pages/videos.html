@@ -1,0 +1,124 @@
+<div class="row">
+  <div class="col-sm-12">
+      <h4 class="page-title">官网设置</h4>
+      <ol class="breadcrumb">
+        <li>视频管理</li>
+        <li class="active">列表</li>
+      </ol>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12" id="mainCotainer">
+    <div class="card-box" id="videoWrap">
+      <div id="videoListWrap">
+        <div class="row m-t-10 m-b-10">
+          <div class="col-sm-6">
+            <div class="portfolioFilter m-t-5" id="supplierLevelBox">
+              <a href="javascript:;" data-filter="" class="current">全部</a>
+              <a href="javascript:;" data-filter="1" class="">新手商家-认知</a>
+              <a href="javascript:;" data-filter="2" class="">新手商家-操作</a>
+              <a href="javascript:;" data-filter="3" class="">进阶商家</a>
+              <a href="javascript:;" data-filter="4" class="">关于导购</a>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <form role="form">
+              <div class="form-group contact-search">
+                  <input type="text" id="search"class="form-control input-sm" placeholder="请输入教程标题关键字...">
+                  <button type="button" class="btn btn-white btn-sm"><i class="iconfont">&#xe62d;</i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="text-right">
+         <a href="#!/videos_edit" class="btn btn-default btn-sm"><i class="iconfont">&#xe63d;</i> 添加视频教程</a>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-actions-bar" id="videosTbl">
+            <thead>
+              <tr>
+                <th style="min-width:200px;">封面</th>
+                <th style="width:20%;">标题</th>
+                <th style="width:10%;">讲师</th>
+                <th style="width:15%;">时长(分钟)</th>
+                <th style="min-width:100px">适合商家层级</th>
+                <th style="min-width:100px">课程费用(元)</th>
+                <th style="min-width:200px;" class="text-right">操作</th>
+              </tr>
+            </thead>
+            <tbody id="videosTbd">
+              <tr ms-repeat="listData" ms-attr-id="tr{{item.id}}">
+                  <td>
+                    <div class="video-pic" style="width:180px; height:100px;" ms-css-background-image="url({{el.videoPic}})"></div>
+                  </td>
+                  <td>{{el.mainTitle || '无'}}</td>
+                  <td>{{el.teacher || '无'}}</td>
+                  <td>
+                      {{el.duringTime || '0'}}
+                  </td>
+                  <td>{{el.supplierLevel || '全部' |splitLevel|html}}</td>
+                  <td>{{el.courseFee || '0'}}</td>
+                  <td class="text-right">
+                      <a href="#!" ms-if="el.status==1" class="table-action-btn" ms-click="publishEv($event,el.id)" data-toggle="tooltip" data-placement="bottom" title="发布"><i class="iconfont">&#xe62b;</i></a>
+                      <a href="#!" ms-if="el.status==2" class="table-action-btn" ms-click="unPublishEv($event,el.id)" data-toggle="tooltip" data-placement="bottom" title="取消发布"><i class="iconfont">&#xe62a;</i></a>
+                      <a href="#!" class="table-action-btn" ms-click="previewEv($event,el.id)" data-toggle="modal" data-target="#videoDetailWrap" title="预览"><i class="fa fa-eye"></i></a>
+                      <a href="#!" class="table-action-btn" ms-click="editEv($event,el.id)" data-toggle="tooltip" data-placement="bottom" title="编辑"><i class="fa fa-pencil"></i></a>
+                      <a href="#!" class="table-action-btn" ms-click="deleteEv($event,el.id)" data-toggle="tooltip" data-placement="bottom" title="删除"><i class="fa fa-close"></i></a>
+                  </td>
+              </tr>
+            </tbody>
+
+            <tbody ms-if="listData.size()==0" id="videosTbd">
+              <tr>
+                <td colspan="30" class="text-center">未查询到相关数据</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr><td colspan="30" class="tl c-8">共 <span id="videosTblTotal">0</span> 条记录</td></tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="tr" class="page-nav">
+          <nav>
+            <ul class="pagination" id="videosPagesNumBox">
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script id="videosTblListTpl" type="text/html">
+{{each list as item i}}
+<tr>
+  <td>
+    <div class="video-pic" style="width:180px; height:100px;" ms-css-background-image="url({{item.videoPic}})"></div>
+  </td>
+  <td>{{item.mainTitle || '无'}}</td>
+  <td>{{item.teacher || '无'}}</td>
+  <td>
+      {{item.duringTime || '0'}}
+  </td>
+  <td>{{item.supplierLevel || '全部' |splitLevel|html}}</td>
+  <td>{{item.courseFee || '0'}}</td>
+  <td class="text-right">
+      {{if item.status===1}}
+      <a href="javascript:;" class="publish">发布上线</a>
+      {{else}}
+      <a href="javascript:;" class="publish">取消发布</a>
+      <a href="javascript:;">预览</a>
+      {{/if}}
+       <a href="javascript:;" class="edit">编辑</a>
+       <a href="javascript:;" class="del">删除</a>
+  </td>
+</tr>
+{{/each}}
+</script>
+
+
+

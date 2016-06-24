@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>洽客官网后台管理</title>
+	<link rel="shortcut icon" href="https://qncdn.qiakr.com/favicon.ico" /> 
+	<meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1;IE=edge" />
+	<link href="//res.qiakr.com/plugins/admin/qk.common.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="/home_admin/css/index.css">
+	<script src="//res.qiakr.com/plugins/kindeditor/kindeditor-full.min.js"></script>
+	<script src="//res.qiakr.com/plugins/require/require-2.1.18.min.js"></script>
+	<script src="/libs/qk.config.js"></script>
+	<script>
+		var _hmt = _hmt || [];
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?0ae38da02c36d427b45394d1982689c8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+	</script>
+</head>
+<body class="menubar-hoverable header-fixed menubar-pin">
+	<div class="topbar ">
+	    <div class="topbar-left">
+	      <div class="text-center">
+	          <a href="main.htm" class="logo"><img src="//static.qiakr.com/logo_512x512.png?imageView2/1/w/80/h/80" alt="洽客官网后台管理" width="40"> 洽客官网管理平台</a>
+	      </div>
+	    </div>
+	    <div class="navbar navbar-default" role="navigation">
+	        <div class="container">
+				<div class="navbar-collapse collapse" aria-expanded="false" id="bs-navbar">
+	                <ul class="nav navbar-nav navbar-right pull-right">
+	                	<li><a class="ell w100 text-right"></a></li>
+	                    <li class="dropdown">
+	                        <a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true">
+	                            <i class="iconfont f20 vm rel" style="top:-2px;">&#xe613;</i> 设置
+	                        </a>
+	                        <ul class="dropdown-menu">
+								<li><a href="javascript:;" id="qkLogout">退出</a></li>
+	              			</ul>
+	                    </li>
+	                </ul>
+            	</div>
+	        </div>
+	    </div>
+	</div>
+	<div id="wrapper">
+	    <div class="left side-menu">
+	        <div class="sidebar-inner slimscrollleft">
+	            <div id="sidebar-menu">
+		        	<ul data-menu="store">
+						<li><a href="#!/news"><i class="iconfont">&#xe69b;</i> <span>新闻管理</span></a></li>
+						<li><a href="#!/videos"><i class="iconfont">&#xe6b2;</i> <span>视频管理</span></a></li>
+		      		</ul>
+	              <div class="clearfix"></div>
+	            </div>
+	            <div class="clearfix"></div>
+	        </div>
+	    </div>
+	    <div class="content-page">
+	      <div class="content" id="mainContent">
+	        <div class="container" ms-controller="rootCtr">
+	        	<div ms-include-src="/home_admin/pages/{{currPage}}.html" data-include-replace="true" data-include-rendered='renderedFn'></div>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+<script>
+	var mainVM;
+	require(['/home_admin/modules/index.js'],function(main){
+		main.init();
+	})
+</script>

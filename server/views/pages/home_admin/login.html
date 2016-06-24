@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="shortcut icon" href="https://qncdn.qiakr.com/favicon.ico" /> 
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1;IE=edge" />
+    <link href="//res.qiakr.com/plugins/admin/qk.common.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/home_admin/css/index.css">
+    <style>
+        .loginBox{width: 400px; margin: 100px auto; }
+    </style>
+    </head>
+    <body>
+        <div class="wrapper-page">
+        	<div class="loginBox card-box">
+                <div class="panel-heading"> 
+                    <h3 class="text-center">登录</h3>
+                </div> 
+                <div class="panel-body">
+                    <form class="form-horizontal m-t-20" id="frmLogin">
+                        <div class="form-group ">
+                            <div class="col-xs-12">
+                                <input id="iptName" class="form-control" type="text" required="" placeholder="用户名">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input id="iptPwd" class="form-control" type="password" required="" placeholder="密码">
+                            </div>
+                        </div>
+                        <div class="form-group text-center m-t-40">
+                            <div class="col-xs-12">
+                                <button class="btn btn-primary btn-block" id="btnLogin" type="submit">登录</button>
+                            </div>
+                        </div>
+                    </form> 
+                </div>   
+            </div>
+        </div>
+    <script src="//res.qiakr.com/plugins/jquery/jquery-1.9.1.min.js"></script>
+    <script>
+    $('#btnLogin').on('click', function(e){
+        e.preventDefault();
+
+        var pms = {
+            uName:$.trim($('#iptName').val()),
+            uPassword:$.trim($('#iptPwd').val())
+        }
+
+        if(!pms.uName || !pms.uPassword) return;
+
+        $(this).addClass('disabled');
+        $.post('/api/home/login', pms)
+            .done(function(data){
+                if(data.status==='0'){
+                    window.location.href = '/home/admin';
+                }else{
+                    $('#frmLogin')[0].reset();
+                    alert('用户名或密码不正确');
+                }
+            })
+            .always(function(){
+                $(this).removeClass('disabled');
+            })
+    })
+    </script>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+extends ../../layout/home
+
+block content
+	div.
+		<div id="calloutBox" class="callout-box">
+			<div class="bs-callout bs-callout-danger" data-scroll-reveal="enter left">
+				<h4>如何入驻洽客	?</h4>
+				<p>点击“我要申请”提交企业相关资料，注册后完成企业微信服务号授权即可开通使用。</p>
+			</div>
+			<div class="bs-callout bs-callout-danger" data-scroll-reveal="enter right">
+		    	<h4>使用洽客服务需要什么条件?</h4>
+		    	<p>
+		    	首先，您需要有一个经过认证的企业微信服务号;<br />
+				其次，您需要拥有一家或多家具备独立货权的实体门店;<br />最后，您必须有一颗热爱零售并愿意为创新零售付诸行动的心</p>
+		  	</div>
+		  
+		    <div class="bs-callout bs-callout-danger" data-scroll-reveal="enter left">
+		    	<h4>洽客和微店有什么区别？</h4>
+		    	<p>
+		    	每个洽客店对应着线下实体门店。<br />
+		    	每个洽客店的服务都是真实的导购提供服务。<br />
+				所以，本地化特征，服务属性是洽客和微商重要的区别。
+				</p>
+		  	</div>
+			<div class="bs-callout bs-callout-danger" data-scroll-reveal="enter right">
+				<h4>洽客是如何收费的?	</h4>
+				<p>2015年洽客平台是完全免费使用的，2016年及以后收费政策请留意官方公告。</p>
+			</div>
+
+			<div class="bs-callout bs-callout-danger" data-scroll-reveal="enter left">
+				<h4>财务如何结算，结算周期是多久？</h4>
+				<p>款项由洽客代收，财务对账确认后结算，周期为每周2次。</p>
+			</div>
+
+			<div class="bs-callout bs-callout-danger" data-scroll-reveal="enter right">
+				<h4>如果我是认证订阅号，会有什么影响？</h4>
+				<p>订阅号也可以绑定，只是用订阅号绑定的话，加粉的话无法识别。</p>
+			</div>
+
+			<div class="bs-callout bs-callout-danger" data-scroll-reveal="enter left">
+				<h4>企业服务号绑定后，是不是不能再授权其它平台了？</h4>
+				<p>可以。前提是其他平台要支持微信公众号授权的开发模式，除了"对话模式""消息通知"等交互模块的使用会受到影响，其他都可以同时并行使用。</p>
+			</div>
+
+			<div class="bs-callout bs-callout-danger" data-scroll-reveal="enter right">
+				<h4>我们需要更多面对面和带教服务</h4>
+				<p>洽客在全国各地有合作的第三方服务商，详情请点击了解"服务商支持"，或致电：0571-88635605 联系盛楠女士</p>
+			</div>
+
+			<div class="bs-callout bs-callout-danger" data-scroll-reveal="enter left">
+				<h4>洽客能否和商家现有的进销存/ERP系统对接？</h4>
+				<p>洽客的数据接口是开放的，如果需要erp对接，需要商家有一定技术能力，获取洽客端口数据。或者您所用的erp公司能够支持接口获取洽客数据。</p>
+			</div>
+
+			<div class="qa-tip mb100">
+			如有疑问可致电 0571-88721785
+			或发送邮件到 kefu@qiakr.com，洽客客服会在3个工作日内答复您
+			</div>
+		</div>
+	
+block script
+	script(src="http://static.qiakr.com/plugins/scrollReveal.js")
+	script.
+		Utils.fixedHeader();
+		new scrollReveal({
+				elem: document.getElementById('calloutBox'),
+				move:'50px',
+				over:'.4s',
+				init:true,
+				reset: false,
+			});
+		$('#calloutBox').css({'visibility':'visible'});
+	
+	
+	
+	
+

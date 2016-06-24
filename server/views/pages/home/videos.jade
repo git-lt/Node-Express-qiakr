@@ -1,0 +1,74 @@
+extends ../../layout/school
+include ../../includes/home/mixins
+
+block style
+    style.
+        .video-list-box {overflow: hidden; zoom: 1; padding:20px 0;}
+        .nav-tabs-video.nav>li>a {color:#333; border:none; border-bottom:2px solid transparent;}
+        .nav-tabs-video>li>a:active,.nav-tabs-video>li>a:hover,
+        .nav-tabs-video.nav-tabs>li.active>a, .nav-tabs-video.nav-tabs>li.active>a:focus, .nav-tabs-video.nav-tabs>li.active>a:hover{border: none; border-bottom:2px solid #f44336;}
+
+block content
+    .container
+        .row
+            .col-sm-12
+                div
+                    form.navbar-form.navbar-right(role='form')
+                        .input-group.m-t-10
+                            input#searchIpt.form-control(type='text', placeholder='请输入视频关键字...')
+                            span.input-group-btn
+                                a#searchBtn.btn.btn-danger(type='button', href='javascript:;') 搜索
+                div
+                    ul#videoTabList.nav.nav-tabs.nav-tabs-video
+                        li.tab-menu(class={active: type==''})
+                            a(href='/school/videos') 全部视频
+                        li.tab-menu(class={active: type=="1"})
+                            a(href='/school/videos/1') 新手商家认知
+                        li.tab-menu(class={active: type=="2"})
+                            a(href='/school/videos/2') 新手商家操作
+                        li.tab-menu(class={active: type=="3"})
+                            a(href='/school/videos/3') 进阶商家
+                        li.tab-menu(class={active: type=="4"})
+                            a(href='/school/videos/4') 关于导购
+                    .tab-content
+                        .tab-pane.active(role='tabpanel')
+                            if data.length
+                                ul#videoListWrap.video-list-box
+                                    each item in data
+                                        li.video-list-item
+                                            a.item-wrap(href='/school/videos/'+item.type+'/'+item.id)
+                                                .sg-item-img
+                                                    img(src=item.videoPic+'', alt='')
+                                            h3= item.mainTitle
+                                            .desc= item.viceTitle
+                                            p.info
+                                                time(title='日期') 发布日期：#{moment(item.gmtCreate).format('YYYY-MM-DD')}
+
+                            else
+                                p.p20.text-center 暂无<span id="keywords" style="color:red"></span>相关数据
+                        .text-right
+                            nav
+                                ul#videoListNavPages.pagination
+                                    +pagination({totalData:count, showData:12})
+
+block script
+    script.
+        var localKey = localStorage.getItem('fuzzyName');
+        if(localKey){
+            $('#searchIpt').val(localKey);
+            $('#keywords').text(' \''+localKey+'\' ');
+        }
+        $('#searchBtn').on('click', function(e){
+            e.preventDefault();
+            var fuzzyName = $('#searchIpt').val().trim().substring(0, 100);
+            fuzzyName = $('<div/>').html(fuzzyName).text();
+            window.location.href='/school/videos?fuzzyName='+ encodeURI(fuzzyName);
+            localStorage.setItem('fuzzyName',fuzzyName);
+        })
+        $('#searchIpt').on('keydown', function(e){
+            if(e.keyCode==13){
+                $('#searchBtn').trigger('click');
+                return false;
+            }
+        })
+

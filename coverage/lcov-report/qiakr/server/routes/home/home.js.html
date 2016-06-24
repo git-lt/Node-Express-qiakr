@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for qiakr/server/routes/home/home.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">all files</a> / <a href="index.html">qiakr/server/routes/home/</a> home.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">35.71% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>15/42</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">37.5% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>6/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">22.22% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">35.71% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>15/42</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * [官网页面路由模块]
+ */
+var newsApi = require('../../api/home/news');
+var loger = require('../../common/logHelper').log;
+&nbsp;
+var homeRouter = {
+	home:<span class="fstat-no" title="function not covered" >function(req, res, next){</span>
+<span class="cstat-no" title="statement not covered" >		res.render('home/index', {title: '首页'});</span>
+	},
+	product:<span class="fstat-no" title="function not covered" >function(req, res, next){</span>
+<span class="cstat-no" title="statement not covered" >		res.render('home/product', {title: '产品介绍'});</span>
+	},
+	facilitator:<span class="fstat-no" title="function not covered" >function(req, res, next){</span>
+<span class="cstat-no" title="statement not covered" >		res.render('home/facilitator', {title: '服务商'});</span>
+	},
+	news:<span class="fstat-no" title="function not covered" >function(req, res, next){</span>
+<span class="cstat-no" title="statement not covered" >		var tag = req.params.tag || '0';</span>
+<span class="cstat-no" title="statement not covered" >		var index = req.body.index || 0;</span>
+<span class="cstat-no" title="statement not covered" >		var length = req.body.length || 6;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		var pms = {</span>
+			index:index,
+			length:length,
+			status:0,
+			tag:tag
+		}
+		// console.log(pms);
+		// 获取数据
+<span class="cstat-no" title="statement not covered" >		newsApi.getArticlesList(pms).then(<span class="fstat-no" title="function not covered" >function(data){</span></span>
+			// console.info(data);
+<span class="cstat-no" title="statement not covered" >			res.render('home/news', {title:'洽客动态', data:data});</span>
+		}).catch(<span class="fstat-no" title="function not covered" >function(err){</span>
+<span class="cstat-no" title="statement not covered" >			loger.error('获取新闻列表失败');</span>
+<span class="cstat-no" title="statement not covered" >			next();</span>
+		});
+	},
+	data_news_list:function(req, res, next){
+		var tag = req.params.tag || <span class="branch-1 cbranch-no" title="branch not covered" >'0';</span>
+		var index = req.body.index || 0;
+		var length = req.body.length || 6;
+&nbsp;
+		var pms = {
+			index:index,
+			length:length,
+			status:0,
+			tag:~~tag
+		}
+&nbsp;
+		newsApi.getArticlesList(pms).then(function(data){
+			res.send({status: '0', data: data});
+		}).catch(<span class="fstat-no" title="function not covered" >function(err){</span>
+<span class="cstat-no" title="statement not covered" >			loger.log(err);</span>
+<span class="cstat-no" title="statement not covered" >			res.send({status: '1', errmsg:'文章数据请求失败！'});</span>
+		});
+	},
+	newsDetail:<span class="fstat-no" title="function not covered" >function(req, res, next){</span>
+<span class="cstat-no" title="statement not covered" >		var id = req.params.id;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		if(id !== undefined){</span>
+<span class="cstat-no" title="statement not covered" >			var pms ={ id: ~~id }</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >			console.log(pms);</span>
+<span class="cstat-no" title="statement not covered" >			newsApi.queryById(pms).then(<span class="fstat-no" title="function not covered" >function(data){</span></span>
+<span class="cstat-no" title="statement not covered" >				res.render('home/newsDetail', data);</span>
+			}).catch(<span class="fstat-no" title="function not covered" >function(err){</span>
+<span class="cstat-no" title="statement not covered" >				loger.error('getDetailById request failure!');</span>
+<span class="cstat-no" title="statement not covered" >				next();</span>
+			});
+		}else{
+<span class="cstat-no" title="statement not covered" >			next();</span>
+		}
+	},
+	data_news_detail:function(req, res, next){
+		var id = req.params.id;
+		<span class="missing-if-branch" title="else path not taken" >E</span>if(id !== undefined){
+			var pms ={
+				id: ~~id
+			}
+			newsApi.queryById(pms)
+			.then(function(data){
+				res.send({status: '0', data: data});
+			}).catch(<span class="fstat-no" title="function not covered" >function(err){</span>
+<span class="cstat-no" title="statement not covered" >				res.send({status: '1', errmsg:'文章数据请求失败！'});</span>
+			});
+		}else{
+<span class="cstat-no" title="statement not covered" >			res.send({status: '0', errmsg:'缺少请求参数'});</span>
+		}
+	},
+	about:<span class="fstat-no" title="function not covered" >function(req, res, next){</span>
+<span class="cstat-no" title="statement not covered" >		res.render('home/about', {title:'关于我们'});</span>
+	},
+	join:<span class="fstat-no" title="function not covered" >function(req, res, next){</span>
+<span class="cstat-no" title="statement not covered" >		res.render('home/join', {title:'加入我们'});</span>
+	},
+	qa:<span class="fstat-no" title="function not covered" >function(req, res, next){</span>
+<span class="cstat-no" title="statement not covered" >		res.render('home/qa', {title:'常见问题'});</span>
+	}
+}
+&nbsp;
+module.exports = homeRouter;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Jun 02 2016 17:52:24 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

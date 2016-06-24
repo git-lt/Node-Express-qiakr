@@ -1,0 +1,30 @@
+.nav>li>a {color:#333;}
+.nav>li>a:focus, .nav>li>a:hover,.nav>li.active>a {color:#f44336; background: none;}
+
+.bs-docs-nav {margin-bottom: 0;}
+.school-index-wrap { margin-bottom: 50px;}
+.label {font-weight: 200; padding: .3em .7em;}
+
+.sg-item-img img{max-width: 100%;}
+.list-box {padding:0;}
+.navbar-brand {padding: 0 15px;}
+.navbar-brand h1{color:#f44336; font-size: 26px;margin: 0;}
+.school-index-wrap .news-floor .item-wrap {color: #333;text-decoration: none;}
+.list-rt ul{margin: 0; padding: 0; list-style: none;} 
+.list-rt li{border-bottom: 1px solid #eee; line-height: 30px; display: block; height: 30px; overflow: hidden; max-width: 100%; text-overflow:ellipse; }
+.list-header-rt {border-left: 3px solid #F76161; padding-left: 0.5em; color: #3E3E3E;}
+
+.video-list-wrap  h3 a{ color:#888; font-size: 14px;}
+.video-list-wrap  h3 a:hover{ color:#337ab7;}
+.video-list-item {float: left; width: 23.8989%; padding: 1%; height: 250px; margin: 0.5%; border: 1px solid #eee; background-color: #fff; display: inline-block; margin-bottom: 30px; -webkit-transition: transform .2s ease-in-out; transition: transform .2s ease-in-out; position: relative;} 
+.list-box.sc-home .video-list-item {width: 32.3333%;}
+.video-list-item h3{font-weight: 400; font-size: 16px; margin: 10px 0 5px 0; word-spacing: 0; white-space: nowrap; text-overflow: ellipsis; -o-text-overflow: ellipsis; overflow: hidden; }
+a.item-wrap {color: #333;text-decoration: none;}
+
+.video-list-item:hover {border-bottom: none; -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); background-color: #FBFBFB; -webkit-transform: translateY(-5px); transform: translateY(-5px); } 
+.video-list-item:hover h3 {color:#f44336;}
+.video-list-item .info {position: absolute; bottom: 0; left: 0; right: 10px; text-align: right; color: #888; font-weight: 100; font-size: 12px; } 
+.video-list-item .desc { height:33px; overflow:hidden; color:#888; font-size: 12px;}
+
+.qrcode-btm {width: 120px;}
+.qkr-footer .footer-download {padding-top: 35px; padding-bottom: 20px;}

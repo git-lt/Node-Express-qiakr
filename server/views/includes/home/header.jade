@@ -1,0 +1,37 @@
+// B-header
+header.qk-header#header
+    nav.navbar.navbar-custom.navbar-fixed-top#headerNavbar(role="navigation")
+        .navbar-header.page-scroll
+            button.navbar-toggle(type="button" data-toggle="collapse" data-target="#navbarCollapse")
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a.navbar-brand(href="/")
+                h1.header-logo 洽客
+        .collapse.navbar-collapse.navbar-main-collapse#navbarCollapse
+            ul.nav.navbar-nav
+                li(class={active: title=='首页'})
+                    a(href="/") 首页
+                li(class={active: title=='产品介绍'})
+                    a(href="/product") 产品介绍
+                li(class={active: title=='服务商'})
+                    a(href="/facilitator") 服务商
+                li(class={active: title=='洽客动态'})
+                    a(href="/news") 洽客动态
+                li(class={active: title=='关于我们'})
+                    a(href="/about") 关于我们
+                li(class={active: title=='加入我们'})
+                    a(href="/join") 加入我们
+                li(class={active: title=='常见问题'})
+                    a(href="/qa") 常见问题
+                li(class={active: title=='洽客大学'})
+                    a(href="/school") 洽客大学
+                li
+                    a(href="//static.qiakr.com/pdf/charge.html" target="_blank") 收费标准
+            ul.nav.navbar-nav.navbar-right
+                li
+                    a.btn-signin(href="http://www.qiakr.com/admin/index.htm") 登录
+                li
+                    a(href="http://www.qiakr.com/admin/open_datum.htm")
+                        span.btn-signup 立即注册
+// E-header

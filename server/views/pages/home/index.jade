@@ -1,0 +1,266 @@
+extends ../../layout/home
+
+block style
+	link(href="//static.qiakr.com/source/video/video-js.min.css" rel="stylesheet")
+
+block content
+	div#pageHome
+		// B-产品介绍
+		section.intro#intro
+			//- banner top
+			div.banner-top
+				.banner-top-inner
+					.slogan
+						img(src="http://static.qiakr.com/admin/home_banner_1_2.png" style="width:80%;")
+					.products
+						img(src="http://static.qiakr.com/admin/home_banner_1_1.png")
+					a(href="javascript:;" class="btn-play-video" id="btnPlayVideo")
+						img(width="18px" height="18px" style="position: relative; top:-1px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA3QAAAN0BcFOiBwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAQFSURBVHic7dtbqFVFGAfw3y4l5GyoqEMvXRSCCioJNDOzTmEPPVVmFyiKQLIbBPXQQyQFQU9FHEwqiKA3tcLqIaIOVKREgWFlhBEVEXHs8lJmmLV6GBZtZ1/O2mfPXhf1Dwv2+matb2b+e+ab/8ysaWVZ5mjGcVUXoGocI2BMfo/HSWPynRQpCZjEK9iLA/gNH+GmhHkkRytREDwD7+CcPulv4Xb8kiKzlEhBQBt7cOYcz32La/H5qBmmRIoucIfuyv+IQ5FtCXbi+gR5JkMKAq6J7p/G6Tgf70dpbbyKjWglyHt0ZFk26rU7OxwrOtIWZFm2KeuNbVmWTSTIf6QrRQs4Mbqf7fh9CPdjA/6OnluHHTgrQRnmjbKE0AtYg58j+1J8gstLKkcXylSCH2A5dkf2SbwrtJLSUbYU/h6rhEDYiYV4Ds9iQZkFqmIusB834jHEIuReQVCdUlZhqpoMZXhcCIT7o7QpIS5cUEZBqp4NvoZL8V1kL000VU0AfIaLhSDZiVJEUx0IIAyPa/B8ZG8JXWUrJsaRcV0IIAilu3Gf7nnE2ERTnQjIsRlX49fInoum1SkzqyMB8J4gmr6I7JOYwV2pMqorAYT1g5XYHtkXCrEiiWiqMwHwB9biiR5pSURT3QkgiKZHcTP+jNKmjCiamkBAjq24DD9E9lw0XTcfp00iAD7FMmFI7ERbUJXrhnXYNAJgH67Ci5G9hZdw3jDOmkgAHMR6PIB/Oux5S1hU1FFTCcgxLTT7zmn1ucIEqxCaTgBBJ2yKbEcVAfB2dL+i6ItHCgGnRff7ir54JBCwSFh678TOoi83nYC2IJAuiuwfFnVQ6gpsYizB67pl8FP4qqiTpraAKXysu/IzeHgYR00kIJ8FnhrZd+EWhwujOdEkAgZtnmwRJkpDf4DRFAL6bZ/9i0eEf/7AfBw3IQguFYJdvCD6O27Fm6M4r3sLuEHv1eBvcIkRK099Ccj3A7bp3g+YETZSvkyRUR27QBsv670tNo0HDRnpB6FuBCzGG7rH94PC8BcvgoyMOhEwJTT5eHyf9X8sSI66xIB79Bc3y42p8lRPQC5uNusvbuJV4KSokoB+4iYzorgZBlXFgEHi5jYhEJaCKlrAIHGzUomVp1wCWsKHUYPEzZ4Sy4PyusCEIG7W9kibxkO6P4ooBSkIiFVZ7HOx0N8vjOxjEzfDIEUX+Cm679yaukLYvY0rP6v39lbpSNEC9gpff+Z4EicIHz2tF84PdWKXsJM71vG9KFKcGFml+CrsFtyphPG9KFJ0gR14Zo5nShU3QyHh4YONfQ5GfJ1l2ZVVH4zod6U6NZZjtTCVPRsnC3t22/FXykxSIjUBjUPVs8HKcYyAqgtQNf4DehtIlzifPJYAAAAASUVORK5CYII=")
+						span
+							| 3分钟了解洽客
+			//- slogan
+			div.sloan-wrap
+				img(src="http://static.qiakr.com/admin/qkSlogan.png?v=2" width="602px" height="59")
+			//- store
+			div.stellar-box.qkr-wx-store
+				div.center1080
+					div.pro-desc.img1
+						div.qrcode-box
+							img.qrcode(src="http://7xi480.com1.z0.glb.clouddn.com/wx_store_preview.png")
+							span
+								| 微信扫描二维码
+								| 体验洽客微商城
+			//- 身边店介绍
+			section.wx-store-desc
+				div.center1080
+					div.store-features-box
+						div.desc
+							h3.tit
+								| 移动门店
+							p.sub
+								| 消费者的身边店
+						ul.pro-features.list-inline
+							li
+								a.feature-icon-wrap(href="javascript:;")
+									i.iconfont
+										| &#xe606;
+									span.center-block
+										| 互动评价
+							li
+								a.feature-icon-wrap(href="javascript:;")
+									i.iconfont
+										| &#xe60d;
+									span.center-block
+										| VIP会员卡
+							li
+								a.feature-icon-wrap(href="javascript:;")
+									i.iconfont
+										| &#xe601;
+									span.center-block
+										| 商品优惠
+							li
+								a.feature-icon-wrap(href="javascript:;")
+									i.iconfont
+										| &#xe60c;
+									span.center-block
+										| 专属导购
+							li
+								a.feature-icon-wrap(href="javascript:;")
+									i.iconfont
+										| &#xe604;
+									span.center-block
+										| 附近门店
+							li
+								a.feature-icon-wrap(href="javascript:;")
+									i.iconfont
+										| &#xe60b;
+									span.center-block
+										| 多种支付方式
+					div.img-phone-store
+						img(src="http://static.qiakr.com/admin/qk_phone_store.png?v=1")
+			//- 导购端
+			div.stellar-box.qkr-sales-app
+				.center1080
+					.pro-desc.img2
+						.qrcode-box
+							img.qrcode(src="http://7xi480.com1.z0.glb.clouddn.com/download_app.png")
+							span
+								| 手机扫描二维码
+								| 体验洽客APP
+			//- 导购端介绍
+			.sales-app-desc
+				.center1080
+					.app-features-box
+						.desc
+							h3.tit
+								| 洽客APP
+							p.sub
+								| 高效的零售服务工具
+						ul.pro-features.list-inline
+							li
+								a.feature-icon-wrap(href="javascript:;")
+									i.iconfont
+										| &#xe603;
+									span.center-block
+										| 专属二维码
+							li
+								a.feature-icon-wrap(href="javascript:;")
+									i.iconfont
+										| &#xe60a;
+									span.center-block
+										| 开单核销
+							li
+								a.feature-icon-wrap(href="javascript:;")
+									i.iconfont
+										| &#xe609;
+									span.center-block
+										| 导购成长
+							li
+								a.feature-icon-wrap(href="javascript:;")
+									i.iconfont
+										| &#xe60e;
+									span.center-block
+										| 业绩跟踪
+							li
+								a.feature-icon-wrap(href="javascript:;")
+									i.iconfont
+										| &#xe600;
+									span.center-block
+										| 标签管理
+							li
+								a.feature-icon-wrap(href="javascript:;")
+									i.iconfont
+										| &#xe605;
+									span.center-block
+										| 个性晒图
+					.img-phone-app
+						img(src="http://static.qiakr.com/admin/qk_phone_app.png?v=1")
+
+			//- 后台管理
+			.stellar-box.qkr-admin-platform
+				.center1080
+					.pro-desc
+						h3.tit
+							| 管理后台
+						p.sub
+							| 统一的管理协作平台
+		// E-产品介绍
+
+		// B-品牌
+		section.investment
+			.center1080.text-center
+				img.img-platform-pc(src="http://static.qiakr.com/admin/qk_mac_platform.png" width="652")
+				ul.pro-features.list-inline.platform-features
+					li
+						a.feature-icon-wrap(href="javascript:;")
+							i.iconfont
+								| &#xe602;
+							span.center-block
+								| 订单管理
+					li
+						a.feature-icon-wrap(href="javascript:;")
+							i.iconfont
+								| &#xe607;
+							span.center-block
+								| 商品管理
+					li
+						a.feature-icon-wrap(href="javascript:;")
+							i.iconfont
+								| &#xe608;
+							span.center-block
+								| 数据管理
+					li
+						a.feature-icon-wrap(href="javascript:;")
+							i.iconfont
+								| &#xe60f;
+							span.center-block
+								| 门店管理
+					li
+						a.feature-icon-wrap(href="javascript:;")
+							i.iconfont
+								| &#xe611;
+							span.center-block
+								| 活动管理
+					li
+						a.feature-icon-wrap(href="javascript:;")
+							i.iconfont
+								| &#xe610;
+							span.center-block
+								| 会员管理
+		// E-品牌
+
+		// B-加入我们
+		section.join-us#joinus
+			.container
+				.row
+					.col-md-12
+						.text-center.brand-box-header
+							h3.tit
+								| 他们都在洽客
+							p.sub
+								| 众多商家汇聚在此，与他们一起了解洽客的魅力所在
+						.brand-wall-wrap.text-center
+							ul.brand-box#brandBox
+								li.brand-logo.row1-1
+								li.brand-logo.row1-2
+								li.brand-logo.row1-3
+								li.brand-logo.row1-4
+								li.brand-logo.row1-5
+								li.brand-logo.row1-6
+								li.brand-logo.row1-7
+								li.brand-logo.row1-8
+								li.brand-logo.row2-1
+								li.brand-logo.row2-2
+								li.brand-logo.row2-3
+								li.brand-logo.row2-4
+								li.brand-logo.row2-5
+								li.brand-logo.row2-6
+								li.brand-logo.row2-7
+								li.brand-logo.row3-1
+								li.brand-logo.row3-2
+								li.brand-logo.row3-3
+								li.brand-logo.row3-4
+								li.brand-logo.row3-5
+								li.brand-logo.row3-6
+								li.brand-logo.row3-7
+								li.brand-logo.row3-8
+						.text-center.apply-box
+							a.btn.btn-apply-qkr(href="http://www.qiakr.com/admin/open_datum.htm")
+								| 立即注册
+		// E-加入我们
+
+		// B-video
+		#videoWrap.video-wrap.text-center
+			.video-mask
+			div.video-wrap-inner
+				video#videoAbout.video-js.vjs-default-skin.vjs-big-play-centered(controls preload="auto" width="710" height="400")
+					source#sourceBox(style="display:inline-block;" src="http://static.qiakr.com/movie%2F%E6%B4%BD%E5%AE%A2%E6%88%90%E7%89%87.mp4" type='video/mp4')
+					p.vjs-no-js
+						| 不支持播放
+				span.video-close#btnVideoClose
+					| 关闭
+		// E-video
+block script
+	script(src="http://static.qiakr.com/source/video/video.min.js")
+	script.
+		Utils.realseHeader();
+
+		var v = videojs('#videoAbout');
+		
+		$('#btnPlayVideo').on('click',function(){
+			$('#videoWrap').addClass('active');
+			setTimeout(function(){
+		    	$('#videoAbout').addClass('active');
+		    	v.ready(function(){this.play();});
+			}, 100)
+		})
+		$('#btnVideoClose').on('click',function(){
+			videojs('#videoAbout').pause();
+			$('#videoAbout').removeClass('active');
+			setTimeout(function(){$('#videoWrap').removeClass('active');}, 200)
+		})
+		if(Utils.getCookie('play')!=='1'){
+			$('#btnPlayVideo').trigger('click');
+			setTimeout(function(){videojs('#videoAbout').play();},1000);
+			Utils.setCookie('play','1',365);
+		}

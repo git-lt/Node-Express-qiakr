@@ -1,0 +1,190 @@
+[2016-06-02 10:28:08.755] [INFO] access - 200 POST /news/0/1 33ms
+[2016-06-02 10:32:18.675] [INFO] access - 200 POST /news/0/1 56ms
+[2016-06-02 10:32:55.114] [INFO] access - 200 POST /news/0/1 39ms
+[2016-06-02 10:36:52.648] [INFO] access - 200 POST /news/0/1 38ms
+[2016-06-02 11:06:12.628] [INFO] access - 200 POST /news/0/1 51ms
+[2016-06-02 11:07:14.687] [INFO] access - 200 POST /news/0/1 123ms
+[2016-06-02 11:10:40.249] [INFO] access - 200 POST /news/0/1 85ms
+[2016-06-02 11:11:17.219] [INFO] access - 200 POST /news/0/1 90ms
+[2016-06-02 11:12:51.503] [INFO] access - 200 POST /news/0/1 70ms
+[2016-06-02 11:46:05.499] [INFO] access - 200 POST /news/0/47 75ms
+[2016-06-02 12:53:33.138] [INFO] access - 200 POST /news/0/47 54ms
+[2016-06-02 12:53:58.222] [INFO] access - 200 POST /news/0/47 84ms
+[2016-06-02 12:54:26.668] [INFO] access - 200 POST /news/0/47 60ms
+[2016-06-02 12:56:01.964] [INFO] access - 200 POST /news/0/47 61ms
+[2016-06-02 12:58:12.548] [INFO] access - 200 POST /news/0/47 48ms
+[2016-06-02 12:59:48.967] [INFO] access - 200 POST /news/0/47 51ms
+[2016-06-02 13:00:39.217] [INFO] access - 200 POST /news/0/47 69ms
+[2016-06-02 13:01:05.006] [INFO] access - 200 POST /news/0/47 64ms
+[2016-06-02 13:01:55.193] [INFO] access - 200 POST /news/0/47 87ms
+[2016-06-02 13:02:52.972] [INFO] access - 200 POST /news/0/47 90ms
+[2016-06-02 13:39:09.414] [INFO] access - 200 POST /news/0/47 57ms
+[2016-06-02 13:40:38.267] [INFO] access - 200 POST /news/0/47 64ms
+[2016-06-02 13:41:08.671] [INFO] access - 200 POST /news/0/47 78ms
+[2016-06-02 13:41:24.294] [INFO] access - 200 POST /news/0/47 79ms
+[2016-06-02 13:49:44.266] [INFO] access - 200 POST /news/0/47 57ms
+[2016-06-02 13:49:44.291] [ERROR] access - 404 POST /videos/2 7ms
+[2016-06-02 13:49:44.329] [INFO] access - 200 POST /news/2/1 25ms
+[2016-06-02 13:50:32.895] [INFO] access - 200 POST /news/0/47 49ms
+[2016-06-02 13:53:35.134] [WARN] access - 304 GET / 609ms
+[2016-06-02 13:53:35.265] [WARN] access - 304 GET /home/css/main.css 7ms
+[2016-06-02 13:53:35.287] [WARN] access - 304 GET /home/js/base.js 1ms
+[2016-06-02 13:53:36.446] [WARN] access - 304 GET /home/css/main.css 2ms
+[2016-06-02 13:53:36.488] [WARN] access - 304 GET /home/js/base.js 4ms
+[2016-06-02 13:53:42.256] [ERROR] access - 404 GET /coverage/lcov-report/index.html 24ms
+[2016-06-02 13:53:49.068] [ERROR] access - 404 GET /coverage/lcov-report/index.html 16ms
+[2016-06-02 13:55:11.776] [ERROR] access - 404 GET /coverage/lcov-report/index.html 33ms
+[2016-06-02 13:55:15.662] [INFO] access - 200 GET /lcov-report/index.html 7ms
+[2016-06-02 13:55:15.797] [INFO] access - 200 GET /lcov-report/prettify.css 7ms
+[2016-06-02 13:55:15.799] [INFO] access - 200 GET /lcov-report/base.css 8ms
+[2016-06-02 13:55:15.805] [INFO] access - 200 GET /lcov-report/prettify.js 10ms
+[2016-06-02 13:55:15.807] [INFO] access - 200 GET /lcov-report/sorter.js 5ms
+[2016-06-02 13:55:15.898] [WARN] access - 304 GET /lcov-report/prettify.css 1ms
+[2016-06-02 13:55:15.947] [WARN] access - 304 GET /lcov-report/prettify.js 2ms
+[2016-06-02 13:55:15.964] [INFO] access - 200 GET /lcov-report/sort-arrow-sprite.png 3ms
+[2016-06-02 13:55:16.078] [WARN] access - 304 GET /lcov-report/base.css 1ms
+[2016-06-02 13:55:16.079] [WARN] access - 304 GET /lcov-report/sorter.js 1ms
+[2016-06-02 14:02:33.066] [INFO] access - 200 POST /news/0/1 64ms
+[2016-06-02 14:04:53.907] [INFO] access - 200 POST /news/0/1 64ms
+[2016-06-02 14:47:30.475] [INFO] access - 200 POST /news/0/1 56ms
+[2016-06-02 14:48:13.628] [INFO] access - 200 POST /news/0/1 55ms
+[2016-06-02 14:48:47.739] [INFO] access - 200 POST /news/0/1 62ms
+[2016-06-02 14:52:37.722] [INFO] access - 200 POST /news/0/1 50ms
+[2016-06-02 14:53:23.744] [INFO] access - 200 POST /news/0/47 57ms
+[2016-06-02 14:54:56.986] [INFO] access - 200 POST /news/0/47 53ms
+[2016-06-02 14:55:19.074] [INFO] access - 200 POST /news/0/47 52ms
+[2016-06-02 14:56:30.566] [INFO] access - 200 POST /news/0/47 78ms
+[2016-06-02 14:57:41.950] [INFO] access - 200 POST /news/0/47 408ms
+[2016-06-02 15:01:34.963] [INFO] access - 200 POST /news/0/47 64ms
+[2016-06-02 15:02:53.569] [INFO] access - 200 POST /news/0/47 62ms
+[2016-06-02 15:28:44.237] [INFO] access - 200 POST /news/0 107ms
+[2016-06-02 15:28:44.510] [INFO] access - 200 POST /news/0/47 217ms
+[2016-06-02 15:30:21.341] [INFO] access - 200 POST /news/0 69ms
+[2016-06-02 15:30:21.395] [INFO] access - 200 POST /news/0/47 24ms
+[2016-06-02 15:31:06.044] [INFO] access - 200 POST /news/0 70ms
+[2016-06-02 15:31:06.109] [INFO] access - 200 POST /news/0/47 27ms
+[2016-06-02 15:31:47.509] [INFO] access - 200 POST /news/0 67ms
+[2016-06-02 15:31:47.549] [INFO] access - 200 POST /news/0/47 19ms
+[2016-06-02 15:32:29.782] [INFO] access - 200 POST /news/0 66ms
+[2016-06-02 15:32:29.818] [INFO] access - 200 POST /news/0/47 13ms
+[2016-06-02 15:40:48.639] [INFO] access - 200 POST /news/0 69ms
+[2016-06-02 15:40:48.679] [INFO] access - 200 POST /news/0/47 22ms
+[2016-06-02 15:40:48.695] [ERROR] access - 404 POST /videos/2 6ms
+[2016-06-02 15:40:48.731] [INFO] access - 200 POST /news/2/1 17ms
+[2016-06-02 15:41:56.912] [INFO] access - 200 POST /news/0 67ms
+[2016-06-02 15:41:56.955] [INFO] access - 200 POST /news/0/47 19ms
+[2016-06-02 15:53:52.828] [INFO] access - 200 POST /news/0 61ms
+[2016-06-02 15:53:52.874] [INFO] access - 200 POST /news/0/47 26ms
+[2016-06-02 15:55:12.298] [INFO] access - 200 POST /news/0 68ms
+[2016-06-02 15:55:12.329] [INFO] access - 200 POST /news/0/47 13ms
+[2016-06-02 15:55:24.290] [INFO] access - 200 POST /news/0 91ms
+[2016-06-02 15:55:24.346] [INFO] access - 200 POST /news/0/47 21ms
+[2016-06-02 16:00:18.587] [ERROR] access - 404 POST /school/videos/2/1 22ms
+[2016-06-02 16:00:57.130] [ERROR] access - 500 POST /school/videos/2/1 527ms
+[2016-06-02 16:01:41.046] [ERROR] access - 500 POST /school/videos/2/1 549ms
+[2016-06-02 16:03:02.542] [ERROR] access - 500 POST /school/videos/2/1 450ms
+[2016-06-02 16:07:00.684] [ERROR] access - 500 POST /school/videos/2/1 630ms
+[2016-06-02 16:08:02.033] [WARN] access - 304 GET / 633ms
+[2016-06-02 16:08:02.235] [WARN] access - 304 GET /home/css/main.css 11ms
+[2016-06-02 16:08:02.238] [WARN] access - 304 GET /home/js/base.js 12ms
+[2016-06-02 16:08:03.349] [WARN] access - 304 GET /home/css/main.css 4ms
+[2016-06-02 16:08:03.429] [WARN] access - 304 GET /home/js/base.js 2ms
+[2016-06-02 16:08:15.320] [ERROR] access - 404 GET /school/video/1 29ms
+[2016-06-02 16:08:30.578] [ERROR] access - 500 GET /school/videos/1 70ms
+[2016-06-02 16:09:17.762] [INFO] access - 200 POST /school/videos/2/1 85ms
+[2016-06-02 16:10:50.368] [INFO] access - 200 POST /school/videos/2/1 88ms
+[2016-06-02 16:11:32.885] [INFO] access - 200 POST /school/videos/2/1 71ms
+[2016-06-02 16:12:41.070] [INFO] access - 200 POST /school/videos/2 77ms
+[2016-06-02 16:12:41.107] [INFO] access - 200 POST /school/videos/2/1 14ms
+[2016-06-02 16:13:13.771] [INFO] access - 200 POST /school/videos/2 76ms
+[2016-06-02 16:13:13.808] [INFO] access - 200 POST /school/videos/2/1 16ms
+[2016-06-02 16:13:51.269] [INFO] access - 200 POST /school/videos/2 74ms
+[2016-06-02 16:13:51.300] [INFO] access - 200 POST /school/videos/2/1 14ms
+[2016-06-02 16:17:17.417] [INFO] access - 200 POST /school/videos/2 66ms
+[2016-06-02 16:17:17.460] [INFO] access - 200 POST /school/videos/2/1 23ms
+[2016-06-02 16:29:53.719] [INFO] access - 200 POST /school/videos/2 86ms
+[2016-06-02 16:29:53.752] [INFO] access - 200 POST /school/videos/2/1 15ms
+[2016-06-02 16:30:18.508] [INFO] access - 200 POST /school/videos/2 105ms
+[2016-06-02 16:30:18.551] [INFO] access - 200 POST /school/videos/2/1 22ms
+[2016-06-02 16:30:40.789] [INFO] access - 200 POST /school/videos/2 66ms
+[2016-06-02 16:30:40.838] [INFO] access - 200 POST /school/videos/2/1 29ms
+[2016-06-02 16:31:04.189] [INFO] access - 200 POST /news/0 95ms
+[2016-06-02 16:31:04.245] [INFO] access - 200 POST /news/0/47 27ms
+[2016-06-02 16:31:04.331] [INFO] access - 200 POST /school/videos/2 24ms
+[2016-06-02 16:31:04.359] [INFO] access - 200 POST /school/videos/2/1 19ms
+[2016-06-02 17:18:40.518] [INFO] access - 200 POST /news/0 39ms
+[2016-06-02 17:18:40.540] [INFO] access - 200 POST /news/0/47 11ms
+[2016-06-02 17:18:40.565] [INFO] access - 200 POST /school/videos/2 17ms
+[2016-06-02 17:18:40.585] [INFO] access - 200 POST /school/videos/2/1 12ms
+[2016-06-02 17:19:05.891] [INFO] access - 200 POST /news/0 72ms
+[2016-06-02 17:19:05.916] [INFO] access - 200 POST /news/0/47 11ms
+[2016-06-02 17:19:05.974] [INFO] access - 200 POST /school/videos/2 49ms
+[2016-06-02 17:19:05.997] [INFO] access - 200 POST /school/videos/2/1 18ms
+[2016-06-02 17:35:04.212] [INFO] console - 
+[2016-06-02 17:35:04.215] [INFO] console - [0m[0m
+[2016-06-02 17:35:04.219] [INFO] console - server running at port:3001
+[2016-06-02 17:35:04.242] [INFO] console - [0m  == NewsAPI 接口测试 ==[0m
+[2016-06-02 17:35:04.254] [INFO] console - [32mYeah zookeeper connected![0m
+[2016-06-02 17:35:04.320] [INFO] console -   [32m  ✓[0m[90m POST - 新闻 - 列表[0m[33m (74ms)[0m
+[2016-06-02 17:35:04.349] [INFO] console -   [32m  ✓[0m[90m POST - 新闻 - 详情[0m
+[2016-06-02 17:35:04.351] [INFO] console - 
+[2016-06-02 17:35:04.352] [INFO] console - [0m  VideosAPI 接口测试[0m
+[2016-06-02 17:35:04.381] [INFO] console -   [32m  ✓[0m[90m POST - 视频 - 列表[0m
+[2016-06-02 17:35:04.402] [INFO] console -   [32m  ✓[0m[90m POST - 视频 - 详情[0m
+[2016-06-02 17:35:04.405] [INFO] console - 
+[2016-06-02 17:35:04.409] [INFO] console - 
+[2016-06-02 17:36:20.222] [INFO] access - 200 POST /news/0 67ms
+[2016-06-02 17:36:20.251] [INFO] access - 200 POST /news/0/47 12ms
+[2016-06-02 17:36:20.274] [INFO] access - 200 POST /school/videos/2 16ms
+[2016-06-02 17:36:20.299] [INFO] access - 200 POST /school/videos/2/1 15ms
+[2016-06-02 17:37:28.809] [INFO] console - 
+[2016-06-02 17:37:28.813] [INFO] console - [0m[0m
+[2016-06-02 17:37:28.820] [INFO] console - server running at port:3001
+[2016-06-02 17:37:28.868] [INFO] console - [0m  == NewsAPI 接口测试 ==[0m
+[2016-06-02 17:37:28.877] [INFO] console - [32mYeah zookeeper connected![0m
+[2016-06-02 17:37:28.966] [INFO] console -   [32m  ✓[0m[90m POST - 新闻 - 列表[0m[31m (85ms)[0m
+[2016-06-02 17:37:29.066] [INFO] console -   [32m  ✓[0m[90m POST - 新闻 - 详情[0m[31m (85ms)[0m
+[2016-06-02 17:37:29.109] [INFO] console - 
+[2016-06-02 17:37:29.112] [INFO] console - [0m  VideosAPI 接口测试[0m
+[2016-06-02 17:37:29.140] [INFO] console -   [32m  ✓[0m[90m POST - 视频 - 列表[0m
+[2016-06-02 17:37:29.182] [INFO] console -   [32m  ✓[0m[90m POST - 视频 - 详情[0m
+[2016-06-02 17:37:29.185] [INFO] console - 
+[2016-06-02 17:37:29.191] [INFO] console - 
+[2016-06-02 17:45:24.040] [INFO] access - 200 POST /news/0 80ms
+[2016-06-02 17:45:24.063] [INFO] access - 200 POST /news/0/47 11ms
+[2016-06-02 17:45:24.084] [INFO] access - 200 POST /school/videos/2 13ms
+[2016-06-02 17:45:24.109] [INFO] access - 200 POST /school/videos/2/1 15ms
+[2016-06-02 17:47:50.076] [INFO] access - 200 POST /news/0 61ms
+[2016-06-02 17:47:50.099] [INFO] access - 200 POST /news/0/47 12ms
+[2016-06-02 17:48:33.592] [INFO] access - 200 POST /news/0 72ms
+[2016-06-02 17:48:33.622] [INFO] access - 200 POST /news/0/47 14ms
+[2016-06-02 17:48:33.656] [INFO] access - 200 POST /school/videos/2 23ms
+[2016-06-02 17:48:33.678] [INFO] access - 200 POST /school/videos/2/1 12ms
+[2016-06-02 17:52:26.344] [INFO] access - 200 POST /news/0 64ms
+[2016-06-02 17:52:26.365] [INFO] access - 200 POST /news/0/47 12ms
+[2016-06-02 17:52:26.389] [INFO] access - 200 POST /school/videos/2 15ms
+[2016-06-02 17:52:26.409] [INFO] access - 200 POST /school/videos/2/1 13ms
+[2016-06-02 18:01:54.153] [INFO] access - 200 POST /news/0 64ms
+[2016-06-02 18:01:54.182] [INFO] access - 200 POST /news/0/47 13ms
+[2016-06-02 18:01:54.205] [INFO] access - 200 POST /school/videos/2 16ms
+[2016-06-02 18:01:54.227] [INFO] access - 200 POST /school/videos/2/1 15ms
+[2016-06-02 18:03:27.647] [INFO] access - 200 POST /news/0 71ms
+[2016-06-02 18:03:27.678] [INFO] access - 200 POST /news/0/47 14ms
+[2016-06-02 18:03:27.724] [INFO] access - 200 POST /school/videos/2 23ms
+[2016-06-02 18:03:27.750] [INFO] access - 200 POST /school/videos/2/1 20ms
+[2016-06-02 18:04:56.445] [INFO] access - 200 POST /news/0 58ms
+[2016-06-02 18:04:56.471] [INFO] access - 200 POST /news/0/47 14ms
+[2016-06-02 18:04:56.504] [INFO] access - 200 POST /school/videos/2 22ms
+[2016-06-02 18:04:56.519] [INFO] access - 200 POST /school/videos/2/1 8ms
+[2016-06-02 18:05:15.330] [INFO] access - 200 POST /news/0 71ms
+[2016-06-02 18:05:15.363] [INFO] access - 200 POST /news/0/47 13ms
+[2016-06-02 18:05:15.397] [INFO] access - 200 POST /school/videos/2 23ms
+[2016-06-02 18:05:15.629] [INFO] access - 200 POST /school/videos/2/1 214ms
+[2016-06-02 18:07:09.770] [INFO] access - 200 POST /news/0 58ms
+[2016-06-02 18:07:09.793] [INFO] access - 200 POST /news/0/47 11ms
+[2016-06-02 18:07:09.813] [INFO] access - 200 POST /school/videos/2 13ms
+[2016-06-02 18:07:09.837] [INFO] access - 200 POST /school/videos/2/1 15ms
+[2016-06-02 18:07:39.328] [INFO] access - 200 POST /news/0 57ms
+[2016-06-02 18:07:39.350] [INFO] access - 200 POST /news/0/47 9ms
+[2016-06-02 18:07:39.373] [INFO] access - 200 POST /school/videos/2 15ms
+[2016-06-02 18:07:39.391] [INFO] access - 200 POST /school/videos/2/1 10ms
